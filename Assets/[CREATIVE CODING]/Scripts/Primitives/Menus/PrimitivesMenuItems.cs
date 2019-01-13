@@ -6,7 +6,8 @@ using UnityEngine;
 /// <summary>
 /// Unity Editor Primitives creation menu items
 /// </summary>
-public class PrimitivesMenuItems : MonoBehaviour {
+public class PrimitivesMenuItems
+{
 
     #region menu items methods
 

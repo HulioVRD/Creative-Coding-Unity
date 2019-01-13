@@ -93,6 +93,7 @@ public static class PlanePrimitive
     }
 
     #endregion
+
     #region main creation method
     public static Mesh Create(PlaneBuilder builder)
     {

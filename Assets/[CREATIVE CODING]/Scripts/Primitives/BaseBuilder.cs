@@ -104,7 +104,6 @@ public abstract class BaseBuilder<T> : IBuildable<T>, IPivotable<T>, IRotable<T>
     }
     #endregion
 
-
     public abstract Mesh Build();
 
     public void SetValue<R>(ref R currentValue, R nextValue)

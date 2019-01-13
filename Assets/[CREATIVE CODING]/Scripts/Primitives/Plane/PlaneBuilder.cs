@@ -101,7 +101,7 @@ public class PlaneBuilder : BaseBuilder<PlaneBuilder>, IPlaneBased<PlaneBuilder>
     public PlaneBuilder SetNumberOfSegments(int numberOfSegmentsWidth, int numberOfSegmentsHeight)
     {
         return SetNumberOfSegmentsWidth(numberOfSegmentsWidth)
-            .SetNumberOfSegmentsHeight(numberOfSegmentsHeight);
+              .SetNumberOfSegmentsHeight(numberOfSegmentsHeight);
     }
 
     #endregion

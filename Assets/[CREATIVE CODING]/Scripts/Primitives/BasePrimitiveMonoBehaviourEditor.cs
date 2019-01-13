@@ -8,6 +8,7 @@ public static class BasePrimitiveMonoBehaviourEditor <T> where T : BaseBuilder<T
 {
     public static void GenerateBaseFields(T baseBuilder)
     {
+        // position and rotation
         EditorGUILayout.Space();
         EditorGUILayout.LabelField("Mesh Settings", EditorStyles.boldLabel);
 
@@ -17,6 +18,8 @@ public static class BasePrimitiveMonoBehaviourEditor <T> where T : BaseBuilder<T
         baseBuilder.SetPivot(EditorGUILayout.Vector3Field("Pivot", baseBuilder.Pivot));
         baseBuilder.SetRotation(EditorGUILayout.Vector3Field("Rotation", baseBuilder.Rotation));
 
+        // UV
+        EditorGUILayout.Space();
         baseBuilder.SetGenerateUvMap(EditorGUILayout.Toggle("Generate UV ", baseBuilder.GenerateUvMap));
 
         EditorGUI.BeginDisabledGroup(!baseBuilder.GenerateUvMap);
